@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="campo">
+        <h1 id="Titulo">Cadastro</h1><br><br>
+        <p id ="Subtitulo">Complete suas informações</p>
+        <br>
+
+        <form>
+            <fieldset class="grupo">
+                <div class="campo">
+                    
+                    <label for="Nome">Nome</label>
+                    <input type="text" nome="nome" id = "nome" required>
+                
+                </div>
+                <label for="Sobrenome">Sobrenome</label>
+                <input type="text" nome="Sobrenome" id = "Sobrenome" required>
+
+            </fieldset><br>
+            <div class="campo">
+                <label for="Email">Email</label>
+                <input type="email" nome ="email" id = "email" required> 
+            </div>
+           <!-- <div> 
+                <label>Marque as opções caso você se encaixe em alguam delas</label>
+                <br>
+                <label>
+                    <input type="radio" nome="dev" value="frontend"> Pessoa com 60 anos ou mais
+                </label>
+                <br>
+                <label>
+                    <input type="radio" nome="dev" value="pessoadef"> Pessoa com deficiencia
+                </label>
+            </div> -->
+            <fieldset class="grupo">
+                <div id="check">
+                    <label>Marque as opções caso você se encaixe em alguma delas:</label><br>
+                    <input type="checkbox" id ="opcao01" nome="pessoa60" value="Pessoa60mais">
+                    <label for="Pessoa60"> Pessoa com 60 anos ou mais</label>
+                    <input type="checkbox" id ="opcao02" nome="pessoadef"value="PessoaDeficiencia">
+                    <label for="Pessoadef"> Pessoa com deficiência</label>
+                </div>
+            </fieldset>
+            <button class="botao" type="submit">Concluído</button><br>
+            <a href="./telainicial.html" rel="next" target="_self">voltar</a>
+        </form>
+
+    </div>
+
+</body>
+</html>
